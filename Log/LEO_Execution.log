@@ -1,0 +1,15 @@
+2016-10-21 20:26:20,518 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2016-10-21 20:26:20,519 [INFO ] ## STARTING LEO ##
+2016-10-21 20:26:20,519 [INFO ] ** Running on Preprocessing mode **
+2016-10-21 20:26:20,519 [INFO ] Loading domain description file...
+2016-10-21 20:26:20,529 [INFO ] Pre-processing text...
+2016-10-21 20:26:20,586 [ERROR] Adding annotator tokenize
+2016-10-21 20:26:20,604 [ERROR] Adding annotator ssplit
+2016-10-21 20:26:20,610 [ERROR] Adding annotator pos
+2016-10-21 20:26:20,628 [ERROR] Loading default properties from tagger edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger
+2016-10-21 20:26:23,017 [ERROR] done [2,3 sec].
+2016-10-21 20:26:23,017 [ERROR] Adding annotator lemma
+2016-10-21 20:26:23,152 [ERROR] Loading default properties from tagger ./Config/taggers/EN_US/wsj-0-18-bidirectional-distsim.tagger
+2016-10-21 20:26:26,547 [ERROR] done [3,4 sec].
+2016-10-21 20:26:26,613 [INFO ] Generating Semantic Role Labeler input File...
+2016-10-21 20:26:26,655 [INFO ] ## FINISHING LEO ##
