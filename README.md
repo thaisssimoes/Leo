@@ -77,8 +77,8 @@ After preprocessing, the LTH Semantic Role Labelling system must be executed by 
 sh scripts/run.sh < ../srlInputConll2008.tokens > ../srlOutput.output
 ```
 
-#### Learning Mode (NOT FUNCTIONAL)
-Uses the output of the semantic labeler as input and list the important domain terms followed by its corresponding synset in wordnet. The sysnset can be later used to determine the term's corresponding semantic type (NOT IMPLEMENTED!).
+#### Learning Mode
+Uses the output of the semantic labeler as input to the Word Sense Disambiguation system and lists the important domain terms followed by its corresponding synset in wordnet. The sysnset can be later used to determine the term's corresponding semantic type.
 
 ```bash
 $ java -jar Leo-0.0.1-SNAPSHOT.jar -i /Pesquisa/srl/conference_domain.txt -o /Pesquisa/ -l /Pesquisa/srl/srlOutput.output -v
