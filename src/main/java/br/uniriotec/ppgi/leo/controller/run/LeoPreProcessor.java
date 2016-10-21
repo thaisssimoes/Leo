@@ -38,7 +38,7 @@ public class LeoPreProcessor {
 		LeoPreProcessor.verbose = verbose;
 	}
 	
-	public void process(String filepath, String lth_srl_root, String outputFilePath) throws IOException{
+	public void process(String filepath, String outputFilePath) throws IOException{
 		
 		
 		/* ************************************************
