@@ -74,12 +74,14 @@ $ java -jar Leo-0.0.1-SNAPSHOT.jar -p -i /Pesquisa/srl/conference_domain.txt -o 
 After preprocessing, the LTH Semantic Role Labelling system must be executed by itself. Go to LTH SRL path and run the script using the file outputted by LEO as its input.
 ```bash
 # Move to LTH SRL installation folder and execute the script
-sh scripts/run.sh < ../srlInputConll2008.tokens > ../srlOutput.output
+$ sh scripts/run.sh < ../srlInputConll2008.tokens > ../srlOutput.output
 ```
 
 #### Learning Mode
-Uses the output of the semantic labeler as input to the Word Sense Disambiguation system and lists the important domain terms followed by its corresponding synset in wordnet. The sysnset can be later used to determine the term's corresponding semantic type.
+Uses the output of the semantic labeler as input to the Word Sense Disambiguation system to determine the corresponding Wordnet Synsets and outputs their supersenses.
 
 ```bash
 $ java -jar Leo-0.0.1-SNAPSHOT.jar -i /Pesquisa/srl/conference_domain.txt -o /Pesquisa/ -l /Pesquisa/srl/srlOutput.output -v
 ```
+
+OBS.: Currently the system does not outputs the Semantic Type Mappings.
