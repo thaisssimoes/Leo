@@ -13,10 +13,12 @@ import br.uniriotec.ppgi.leo.controller.nlp.CoNLL2008Parser;
 import br.uniriotec.ppgi.leo.controller.nlp.srl.SRLPostprocessor;
 import br.uniriotec.ppgi.leo.controller.nlp.wsd.SenseRelateParser;
 import br.uniriotec.ppgi.leo.controller.utils.AppConfigurer;
+import br.uniriotec.ppgi.leo.controller.utils.LeoFileUtils;
 import br.uniriotec.ppgi.leo.controller.utils.StringUtils;
 import br.uniriotec.ppgi.leo.model.KernelSentence;
 import br.uniriotec.ppgi.leo.model.MainTerm;
 import br.uniriotec.ppgi.leo.model.ProcessedSentence;
+import br.uniriotec.ppgi.leo.model.WordnetSynset;
 
 
 /**
@@ -114,21 +116,21 @@ public class LeoLarner {
 		FileUtils.copyFile(wsdInputFile, outputFile);
 		
 		
-//		//Run WSD system and disambiguate senses against Wordnet
-//		//If it hangs the application, call the system from outside due to memory RAM limitations of the JVM
-//		if(isVerbose()) logger.info("-- Running WSD system");
-//		SystemCaller.callSystemProccess(
-//				outputFilePath+"/wsd/WordNet-SenseRelate-AllWords-0.19/utils/wsd.pl "	//Script to run WSD
-//				+ "--context "+outputFilePath+"/wsdWntaggedInput.wsd  "					//Input file
-//				+ "--format wntagged "													//Format of input file
-//				+ "--window 5 ",														//Number of words to look around
-//				outputFilePath+"/wsdWntaggedOutput.wsdout"								//output file
-//				
-//			);
-//		
-//		//Remove first lines of the outputted file to remove the parameters passed to the WSD system
-//		LeoFileUtils.deleteLines(outputFilePath+"/wsdWntaggedOutput.wsdout", 1, 18);
-		logger.error("DESCOMENTAR A DESAMBIGUACAO!!!");
+		//Run WSD system and disambiguate senses against Wordnet
+		//If it hangs the application, call the system from outside due to memory RAM limitations of the JVM
+		if(isVerbose()) logger.info("-- Running WSD system");
+		SystemCaller.callSystemProccess(
+				outputFilePath+"/wsd/WordNet-SenseRelate-AllWords-0.19/utils/wsd.pl "	//Script to run WSD
+				+ "--context "+outputFilePath+"/wsdWntaggedInput.wsd  "					//Input file
+				+ "--format wntagged "													//Format of input file
+				+ "--window 5 ",														//Number of words to look around
+				outputFilePath+"/wsdWntaggedOutput.wsdout"								//output file
+				
+			);
+		
+		//Remove first lines of the outputted file to remove the parameters passed to the WSD system
+		LeoFileUtils.deleteLines(outputFilePath+"/wsdWntaggedOutput.wsdout", 1, 18);
+//		logger.error("DESCOMENTAR A DESAMBIGUACAO!!!");
 		
 		
 		
@@ -141,11 +143,11 @@ public class LeoLarner {
 		if(isVerbose()) logger.info("-- Parsing WSD system's output");
 		SenseRelateParser.parseWsdProcessedFile(srlProcessedSentences,mainTermsList,outputFilePath+"/wsdWntaggedOutput.wsdout");
 		
-//		for(ProcessedSentence set : srlProcessedSentences){
-//			for(WordnetSynset wnSyn : set.getWordnetSynsets()){
-//				System.out.println(wnSyn);
-//			}
-//		}
+		for(ProcessedSentence set : srlProcessedSentences){
+			for(WordnetSynset wnSyn : set.getWordnetSynsets()){
+				System.out.println(wnSyn);
+			}
+		}
 		
 		
 		/* ************************************************
