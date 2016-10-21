@@ -3,9 +3,10 @@
 **Leo** is an acronym for **Le**arning **O**ntologies System, a tool aiming at automatically generating well-founded ontologies described in OntoUML, through Natural Language Processing Techniques. The system uses multiple natural language processing tools, such as:
  * StanforNLP;
  * OpenNLP;
- * LTH Semantic Mapper;
- * WordNet::SenseRelate;
- * WordNet.
+ * LTH Semantic Mapper ([link](http://nlp.cs.lth.se/software/semantic_parsing%3A_propbank_nombank_frames/));
+ * WordNet ([link](https://wordnet.princeton.edu/));
+ * WordNet::SenseRelate ([link](http://www.d.umn.edu/~tpederse/senserelate.html)).
+
 
 This project is a part of a research conducted by Felipe Leão, a M.Sc. researcher at the graduation program in Informatics (PPGI) at UNIRIO (Universidade Federal do Estado do Rio de Janeiro). For more information, please go to [fleao.com.br](http://www.fleao.com.br/researches/).
 
@@ -74,7 +75,7 @@ $ java -jar Leo-0.0.1-SNAPSHOT.jar -p -i /Pesquisa/srl/conference_domain.txt -o 
 After preprocessing, the LTH Semantic Role Labelling system must be executed by itself. Go to LTH SRL path and run the script using the file outputted by LEO as its input.
 ```bash
 # Move to LTH SRL installation folder and execute the script
-$ sh scripts/run.sh < ../srlInputConll2008.tokens > ../srlOutput.output
+$ sh scripts/run.sh < srlInputConll2008.tokens > srlOutput.output
 ```
 
 #### Learning Mode
@@ -84,4 +85,4 @@ Uses the output of the semantic labeler as input to the Word Sense Disambiguatio
 $ java -jar Leo-0.0.1-SNAPSHOT.jar -i /Pesquisa/srl/conference_domain.txt -o /Pesquisa/ -l /Pesquisa/srl/srlOutput.output -v
 ```
 
-OBS.: Currently the system does not outputs the Semantic Type Mappings.
+OBS.: Currently the system does not outputs the Semantic Type Mappings, sotpping its processing at disambiguation of word senses.
