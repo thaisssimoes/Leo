@@ -38,10 +38,9 @@ public class CommandLineRunner {
 			 * 				Start application
 			 * ************************************************/
 			if(parameters.getBoolean("preprocess")){
-				String lthSrlRoot = parameters.getString("srl_path");
 				logger.info("** Running on Preprocessing mode **");
 				LeoPreProcessor processor = new LeoPreProcessor(verbose);
-				processor.process(inputSentences, lthSrlRoot, outputFilePath);
+				processor.process(inputSentences, outputFilePath);
 			}else{
 				String labeledSentences = parameters.getString("labeled_sentences");
 				LeoLarner learner = new LeoLarner(verbose);
@@ -110,20 +109,10 @@ public class CommandLineRunner {
 	        .setRequired(false) 
 	        .setShortFlag('l') 
 	        .setLongFlag("labeled_sentences");
-			labeledSentences.setHelp("The path to the semantic role labeled sentences (CoNLL 2008 format). OBS: Should only be passed when the application is executed on Default Mode (whithout \"-p\")");
+			labeledSentences.setHelp("The path to the semantic role labeled sentences (CoNLL 2008 format). OBS: Should only be passed when the application is executed on Default Mode (whithout \"-p\").");
     		
 
 			
-		//Preprocessing parameters
-    	FlaggedOption lthRoot = new FlaggedOption("srl_path")
-	        .setRequired(false) 
-	        .setShortFlag('s') 
-	        .setLongFlag("srl_path");
-    		lthRoot.setHelp("The LTH_SRL system root path, where models and descriptors folders are. OBS: Should only be passed when the application is executed on Preprocess Mode.");
-    		
-    		
-    		
-    		
     	//General Swithces
         Switch swVerbose = new Switch("verbose")
 			.setShortFlag('v')
@@ -147,7 +136,6 @@ public class CommandLineRunner {
 			jsap.registerParameter(optFilename);
 			jsap.registerParameter(outputFile);
 			jsap.registerParameter(labeledSentences);
-			jsap.registerParameter(lthRoot);
 			jsap.registerParameter(swVerbose);
 			jsap.registerParameter(swHelp);
 		} catch (Exception e) {
@@ -180,11 +168,8 @@ public class CommandLineRunner {
         
         //Otherwise, return the parsed parameters 
         }else{
-        	if(config.getBoolean("preprocess")==true && config.getString("srl_path")==null){
-        		System.err.println("ERROR: When running the application in PreProcessing mode it is necessary to inform \"srl_path\" parameter");
-        		System.exit(1);
-        	}else if(config.getBoolean("preprocess")==false && config.getString("labeled_sentences")==null){
-        		System.err.println("ERROR: When running the application in Default mode it is necessary to inform \"labeled_sentences\" parameter");
+        	if(config.getBoolean("preprocess")==false && config.getString("labeled_sentences")==null){
+        		System.err.println("ERROR: When running the application in Default mode it is necessary to inform \"labeled_sentences\" parameter.");
         		System.exit(1);
         	}else{
         		return config; 
