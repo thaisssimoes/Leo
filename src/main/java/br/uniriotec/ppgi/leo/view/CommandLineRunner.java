@@ -82,7 +82,7 @@ public class CommandLineRunner {
 		 * ****************************************/
 		
 		//Switch to alternate between Preprocessing mode and Learning mode
-		Switch preprocess = new Switch("preprocess")
+		Switch preprocess = new Switch("preprocess").setDefault("-p")
 		    .setShortFlag('p') 
 		    .setLongFlag("preprocess");
 			preprocess.setHelp("Runs the application in Preprocess Mode, which use parameters to generate a SRL Input File (CoNLL 2008 format).");
@@ -94,12 +94,14 @@ public class CommandLineRunner {
 	        .setRequired(true) 
 	        .setShortFlag('i') 
 	        .setLongFlag("input_sentences");
+    		//optFilename.addDefault("/home/thais/Documentos/TCC/Leo/target/alice.txt");//THAIS
 	    	optFilename.setHelp("The path to the input TXT file with domain description.");
 	    	
 	    FlaggedOption outputFile = new FlaggedOption("output_file_path")
 	        .setRequired(true) 
 	        .setShortFlag('o') 
 	        .setLongFlag("output_path");
+	    	//outputFile.addDefault("/home/thais/Documentos/TCC/Leo/target/");//THAIS
     		outputFile.setHelp("The path LTH_SRL root where models and descriptors folders are.");
 	    	
     		
@@ -109,7 +111,7 @@ public class CommandLineRunner {
 	        .setRequired(false) 
 	        .setShortFlag('l') 
 	        .setLongFlag("labeled_sentences");
-			labeledSentences.setHelp("The path to the semantic role labeled sentences (CoNLL 2008 format). OBS: Should only be passed when the application is executed on Default Mode (whithout \"-p\").");
+			labeledSentences.setHelp("The path to the semantic role labeled sentences (CoNLL 2008 format). OBS: Should only be passed when the application is executed on Default Mode (without \"-p\").");
     		
 
 			

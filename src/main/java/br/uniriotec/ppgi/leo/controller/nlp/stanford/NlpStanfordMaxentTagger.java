@@ -6,8 +6,8 @@ import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
 public class NlpStanfordMaxentTagger {
 	
-	public static String EN_WSJ_L3W 	= "./Config/taggers/EN_US/wsj-0-18-left3words.tagger";
-	public static String EN_WSJ_BID 	= "./Config/taggers/EN_US/wsj-0-18-bidirectional-distsim.tagger";
+	public static String EN_WSJ_L3W 	= "/home/thais/Documentos/TCC/Leo/Config/taggers/EN_US/wsj-0-18-left3words.tagger";
+	public static String EN_WSJ_BID 	= "/home/thais/Documentos/TCC/Leo/Config/taggers/EN_US/wsj-0-18-bidirectional-distsim.tagger";
 	
 	private static MaxentTagger TAGGER_EN_WSJ_L3W = null;
 	private static MaxentTagger TAGGER_EN_WSJ_BID = null;

@@ -1,0 +1,92 @@
+2017-11-18 11:37:21,195 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2017-11-18 11:37:21,196 [INFO ] ## STARTING LEO ##
+2017-11-18 11:37:21,196 [INFO ] ** Running on Preprocessing mode **
+2017-11-18 11:37:21,196 [INFO ] Loading domain description file...
+2017-11-18 11:37:21,245 [INFO ] Pre-processing text...
+2017-11-18 11:37:21,337 [ERROR] Adding annotator tokenize
+2017-11-18 11:37:21,354 [ERROR] Adding annotator ssplit
+2017-11-18 11:37:21,357 [ERROR] Adding annotator pos
+2017-11-18 11:37:21,378 [ERROR] Loading default properties from tagger edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger
+2017-11-18 11:37:24,886 [ERROR] done [3,2 sec].
+2017-11-18 11:37:24,887 [ERROR] Adding annotator lemma
+2017-11-18 11:37:25,169 [ERROR] Loading default properties from tagger /home/thais/Documentos/TCC/Leo/Config/taggers/EN_US/wsj-0-18-bidirectional-distsim.tagger
+2017-11-18 11:37:30,931 [ERROR] done [5,7 sec].
+2017-11-18 11:37:31,010 [INFO ] Generating Semantic Role Labeler input File...
+2017-11-18 11:37:31,265 [INFO ] ## FINISHING LEO ##
+2017-11-18 11:45:38,695 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2017-11-18 11:45:38,695 [INFO ] ## STARTING LEO ##
+2017-11-18 11:45:38,695 [INFO ] ** Running on Preprocessing mode **
+2017-11-18 11:45:38,696 [INFO ] Loading domain description file...
+2017-11-18 11:45:38,742 [INFO ] Pre-processing text...
+2017-11-18 11:45:38,780 [ERROR] Adding annotator tokenize
+2017-11-18 11:45:38,786 [ERROR] Adding annotator ssplit
+2017-11-18 11:45:38,809 [ERROR] Adding annotator pos
+2017-11-18 11:45:38,847 [ERROR] Loading default properties from tagger edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger
+2017-11-18 11:45:41,989 [ERROR] done [2,9 sec].
+2017-11-18 11:45:41,990 [ERROR] Adding annotator lemma
+2017-11-18 11:45:42,475 [ERROR] Loading default properties from tagger /home/thais/Documentos/TCC/Leo/Config/taggers/EN_US/wsj-0-18-bidirectional-distsim.tagger
+2017-11-18 11:45:47,734 [ERROR] done [5,2 sec].
+2017-11-18 11:45:51,228 [INFO ] Generating Semantic Role Labeler input File...
+2017-11-18 11:45:51,481 [INFO ] ## FINISHING LEO ##
+2017-11-20 22:15:17,000 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2017-11-20 22:15:17,002 [INFO ] ## STARTING LEO ##
+2017-11-20 22:15:17,002 [INFO ] ** Running on Preprocessing mode **
+2017-11-20 22:15:17,003 [INFO ] Loading domain description file...
+2017-11-20 22:15:17,052 [ERROR] Error when reading the domain description file. conference_domain.txt (Arquivo ou diretório não encontrado)
+2017-11-20 22:15:24,731 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2017-11-20 22:15:24,732 [INFO ] ## STARTING LEO ##
+2017-11-20 22:15:24,732 [INFO ] ** Running on Preprocessing mode **
+2017-11-20 22:15:24,732 [INFO ] Loading domain description file...
+2017-11-20 22:15:24,734 [ERROR] Error when reading the domain description file. /conference_domain.txt (Arquivo ou diretório não encontrado)
+2017-11-20 22:15:32,016 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2017-11-20 22:15:32,016 [INFO ] ## STARTING LEO ##
+2017-11-20 22:15:32,016 [INFO ] ** Running on Preprocessing mode **
+2017-11-20 22:15:32,017 [INFO ] Loading domain description file...
+2017-11-20 22:15:32,050 [INFO ] Pre-processing text...
+2017-11-20 22:15:32,154 [ERROR] Adding annotator tokenize
+2017-11-20 22:15:32,183 [ERROR] Adding annotator ssplit
+2017-11-20 22:15:32,187 [ERROR] Adding annotator pos
+2017-11-20 22:15:32,252 [ERROR] Loading default properties from tagger edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger
+2017-11-20 22:15:36,594 [ERROR] done [3,9 sec].
+2017-11-20 22:15:36,595 [ERROR] Adding annotator lemma
+2017-11-20 22:15:36,815 [ERROR] Loading default properties from tagger /home/thais/Documentos/TCC/Leo/Config/taggers/EN_US/wsj-0-18-bidirectional-distsim.tagger
+2017-11-20 22:15:42,076 [ERROR] done [5,2 sec].
+2017-11-20 22:15:42,220 [INFO ] Generating Semantic Role Labeler input File...
+2017-11-20 22:15:42,676 [INFO ] ## FINISHING LEO ##
+2017-12-14 18:35:59,766 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2017-12-14 18:35:59,767 [INFO ] ## STARTING LEO ##
+2017-12-14 18:35:59,767 [INFO ] ** Running on Preprocessing mode **
+2017-12-14 18:35:59,768 [INFO ] Loading domain description file...
+2017-12-14 18:35:59,807 [INFO ] Pre-processing text...
+2017-12-14 18:35:59,896 [ERROR] Adding annotator tokenize
+2017-12-14 18:35:59,918 [ERROR] Adding annotator ssplit
+2017-12-14 18:35:59,922 [ERROR] Adding annotator pos
+2017-12-14 18:35:59,951 [ERROR] Loading default properties from tagger edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger
+2017-12-14 18:36:03,538 [ERROR] done [3,4 sec].
+2017-12-14 18:36:03,539 [ERROR] Adding annotator lemma
+2017-12-14 18:36:04,309 [ERROR] Loading default properties from tagger /home/thais/Documentos/TCC/Leo/Config/taggers/EN_US/wsj-0-18-bidirectional-distsim.tagger
+2017-12-14 18:36:09,352 [ERROR] done [5,0 sec].
+2017-12-14 18:36:11,160 [INFO ] Generating Semantic Role Labeler input File...
+2017-12-14 18:36:11,418 [INFO ] ## FINISHING LEO ##
+2018-01-31 21:21:26,309 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2018-01-31 21:21:26,334 [INFO ] ## STARTING LEO ##
+2018-01-31 21:21:26,334 [INFO ] ** Running on Preprocessing mode **
+2018-01-31 21:21:36,994 [INFO ] ## FINISHING LEO ##
+2018-04-18 20:57:27,879 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2018-04-18 20:57:27,879 [INFO ] ## STARTING LEO ##
+2018-04-18 20:57:27,879 [INFO ] ** Running on Preprocessing mode **
+2018-04-18 20:57:34,584 [INFO ] === LEO (Learning Well-Founded Ontologies through NLP) ===
+2018-04-18 20:57:34,585 [INFO ] ## STARTING LEO ##
+2018-04-18 20:57:34,585 [INFO ] ** Running on Preprocessing mode **
+2018-04-18 20:57:34,585 [INFO ] Loading domain description file...
+2018-04-18 20:57:34,593 [INFO ] Pre-processing text...
+2018-04-18 20:57:34,623 [ERROR] Adding annotator tokenize
+2018-04-18 20:57:34,627 [ERROR] Adding annotator ssplit
+2018-04-18 20:57:34,629 [ERROR] Adding annotator pos
+2018-04-18 20:57:34,641 [ERROR] Loading default properties from tagger edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger
+2018-04-18 20:57:36,592 [ERROR] done [1,9 sec].
+2018-04-18 20:57:36,592 [ERROR] Adding annotator lemma
+2018-04-18 20:57:37,612 [ERROR] Loading default properties from tagger /home/thais/Documentos/TCC/Leo/Config/taggers/EN_US/wsj-0-18-bidirectional-distsim.tagger
+2018-04-18 20:57:40,917 [ERROR] done [3,2 sec].
+2018-04-18 20:57:41,019 [INFO ] Generating Semantic Role Labeler input File...
+2018-04-18 20:57:41,282 [INFO ] ## FINISHING LEO ##

@@ -1,0 +1,8 @@
+An organizing committee is composed by committee members and is responsible for organizing the conference.
+The presiding member of the organizing committee is the chair, who publishes the conference.
+Authors submit papers, which are received by committee members and distributed by them among reviewers.
+Reviewers conduct reviews and recommend which papers should be accepted.
+A paper can have three different stages during its lifecycle.
+Before reviews a paper is marked as a not evaluated paper.
+Once revisions are done, a paper becomes either an accepted paper or a rejected paper.
+Presentations are prepared based on accepted papers only.
